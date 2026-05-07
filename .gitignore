@@ -1,0 +1,55 @@
+# ===== Runtime outputs =====
+work_dirs/
+logs/
+reports/
+appeval/api_log/
+osagent_logs/
+workspace/
+run/
+
+# ===== Config with real credentials =====
+configs/config.yaml
+configs/run_config.yaml
+config/config_gemini3_flash.yaml
+config/config_sft.yaml
+
+# ===== Data & model weights (download via script) =====
+data/omniparser_icon_detect.pt
+data/*.xlsx
+*.xlsx
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# ===== Environments =====
+.env
+.venv
+venv/
+env/
+
+# ===== IDE =====
+.idea/
+.vscode/
+.DS_Store
+
+# ===== Test & coverage =====
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# ===== Misc =====
+*.log
+*.tmp
+*.png
+!assets/images/graph_overview.png
+.cache/
+C:/

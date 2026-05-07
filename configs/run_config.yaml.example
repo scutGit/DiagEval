@@ -1,0 +1,56 @@
+# DiagEval Experiment Configuration
+# Copy this file to run_config.yaml and modify as needed.
+
+# ----- Run Parameters -----
+tasks: 0              # Number of tasks to run (0 = all)
+workers: 10           # Parallel workers
+model: remote         # local | remote | text
+serial_per_url: true  # Serialize tasks on the same URL
+cuda_devices: [0]     # GPUs for OCR (if using [ultra] install)
+
+# ----- Data -----
+excel_file: "data/your_dataset.xlsx"
+true_label_column: "label"
+
+# ----- Branching (Diagnostic Retry) -----
+branching_n_candidates: 5    # Number of candidate diagnostic plans (0 = disable)
+branching_k: 3               # Top-K plans to execute
+branching_env_fail_threshold: 0.7  # P(EnvFail) threshold for early stop
+
+# ----- Remote Model Configuration -----
+remote:
+  config_file: configs/config.yaml
+  llm:
+    api_type: openai
+    model: "claude-3-5-sonnet-v2"
+    base_url: "https://api.openai.com/v1"
+    api_key: "${OPENAI_API_KEY}"
+    stream: "false"
+  base_display: 800
+  base_chrome_port: 10000
+  log_dir_prefix: diageval_run
+  result_excel: results.xlsx
+  score_column: score
+  evidence_column: evidence
+
+
+# ----- Text Agent Configuration -----
+text:
+  config_file: configs/config.yaml
+  agent_class: text_agent
+  a11y_mode: cdp
+  llm:
+    api_type: openai
+    model: "claude-3-5-sonnet-v2"
+    base_url: "https://api.openai.com/v1"
+    api_key: "${OPENAI_API_KEY}"
+    stream: "false"
+  base_display: 1200
+  base_chrome_port: 11000
+  max_iters: 15
+  use_ocr: false
+  debug_screenshots: true
+  log_dir_prefix: diageval_text
+  result_excel: results_text.xlsx
+  score_column: text_score
+  evidence_column: text_evidence

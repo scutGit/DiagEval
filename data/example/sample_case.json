@@ -1,0 +1,9 @@
+{
+  "sample_web_task": {
+    "task_name": "sample_web_task",
+    "url": "https://example.com",
+    "case_desc": "Verify that the page displays a heading with text 'Example Domain'.",
+    "expected_result": "Pass",
+    "label": 1
+  }
+}
