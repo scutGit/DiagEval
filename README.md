@@ -8,7 +8,11 @@
 
 ## Demo
 
-https://github.com/scutGit/DiagEval/releases/download/v0.1.0/diageval_demo.mp4
+<div align="center">
+  <video src="https://github.com/scutGit/DiagEval/assets/demo/diageval_demo.mp4" controls width="800">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## Key Idea
 
