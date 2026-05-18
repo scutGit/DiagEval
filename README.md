@@ -8,7 +8,7 @@
 
 ## Demo
 
-https://github.com/scutGit/DiagEval/raw/main/assets/demo/diageval_demo.mp4
+https://github.com/scutGit/DiagEval/releases/download/v0.1.0/diageval_demo.mp4
 
 ## Key Idea
 
