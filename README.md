@@ -8,7 +8,7 @@
 
 ## Demo
 
-https://github.com/user-attachments/assets/6db84760-c041-4dc1-8544-64b9cd5115b3
+https://github.com/user-attachments/assets/9ba78f9d-e1b3-4f5a-9a9f-905b9fdaf227
 
 ## Key Idea
 
