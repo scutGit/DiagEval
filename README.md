@@ -6,6 +6,10 @@
 
 ![Framework Overview](assets/images/graph_overview.png)
 
+## Demo
+
+https://github.com/scutGit/DiagEval/raw/main/assets/demo/diageval_demo.mp4
+
 ## Key Idea
 
 When a GUI agent fails a test case, the failure can stem from:
