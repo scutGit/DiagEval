@@ -1,6 +1,7 @@
 # DiagEval
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.17439-b31b1b.svg)](https://arxiv.org/abs/2605.17439)
 
 **DiagEval** is a diagnostic retry framework for automated GUI evaluation. Instead of blindly retrying failed test cases, DiagEval diagnoses the source of uncertainty (SOU), generates targeted diagnostic probes, and uses Bayesian belief updating to distinguish between agent failures and environment failures.
 
